@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WebWorkz</title>
+</head>
+<body bgcolor="#556B2F" body text="#FFFAFA">
+    <p align=center>
+        <img src="WW.png"
+        </p>
+    <hr noshade color="#FFFAFA" />
+    <img src="opisanie.png"   
+         <hr noshade color="#FFFAFA" />
+    <h1>WebWorkz – компания, которая превращает идею в сайт, подходящий для бизнеса.</h1>
+    <h1> Мы создаем сайты для компаний, от некоммерческих организаций до корпораций.</h1>
+    <h1> Преимущества нашей компании заключаются в индивидуальном подходе, современных технологиях и профессиональном дизайне.</h1>
+    <hr noshade color="#FFFAFA" />
+    <p><img src="knopka.png"</p>
+        <p>
+            <button style="background-color:#FFFAFA">
+            <svg width="1000" height="10">
+                <path d="..."/>
+            </svg>
+            <p align=center><img src="text.png"</p>
+            </button>
+        </p>
+</body>
+</html>
