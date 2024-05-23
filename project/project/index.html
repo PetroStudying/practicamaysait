@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WebWorkz</title>
+</head>
+<body bgcolor="#556B2F" body text="#FFFAFA">
+    <p align=center>
+        <img src="WW.png"
+        </p>
+    <hr noshade color="#FFFAFA" />
+    <img src="opisanie.png"   
+         <hr noshade color="#FFFAFA" />
+    <h1>WebWorkz – компания, которая превращает идею в сайт, подходящий для бизнеса.</h1>
+    <h1> Мы создаем сайты для компаний, от некоммерческих организаций до корпораций.</h1>
+    <h1> Преимущества нашей компании заключаются в индивидуальном подходе, современных технологиях и профессиональном дизайне.</h1>
+    <hr noshade color="#FFFAFA" />
+    <p><img src="knopka.png"</p>
+        <p>
+        <button id="getServicesButton" style="background-color:#FFFAFA"><p align=center><img src="text.png" /></p></button>
+        </p>
+        <ul id="servicesList"></ul>
+            <script>
+            document.getElementById('getServicesButton').addEventListener('click', function() {
+                fetch('/get_services_from_db/') // Обратите внимание на URL, который должен соответствовать вашему Django URL маршруту
+                    .then(response => response.json())
+                    .then(data => {
+                        let servicesList = document.getElementById('servicesList');
+                        servicesList.innerHTML = ''; // Очистить список перед добавлением новых данных
+                        data.forEach(service => {
+                            let listItem = document.createElement('li');
+                            listItem.textContent = Услуга: ${Title}, Описание: ${Description}, Цена ${Price};
+                            servicesList.appendChild(listItem);
+                        });
+                    });
+            });
+            </script>
+</body>
+</html>
+
